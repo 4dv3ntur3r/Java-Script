@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Music Player</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+	<h1>Music Player</h1>
+	<div class="music-container" id="music-container">
+		<!-- Progress bar and Name of the music  -->
+		<div class="music-info">
+			<h4 id="title"></h4>
+			<div class="progress-container" id="progress-container">
+				<div class="progress" id="progress"></div>
+			</div>
+		</div>
+
+		<!-- HTML audio container -->
+		<audio src="./music/tpg1.mp3" id="audio"></audio>
+
+		<!-- Image of the music file  -->
+		<div class="img-container">
+			<img src="./images/img1.jpg" alt="Music Cover" id="cover">
+		</div>
+
+		<!-- Navigation buttons and play or pause button -->
+		<div class="navigation">
+			<!-- Previous btn -->
+			<button id="prev" class="action-btn">
+				<i class="fas fa-backward"></i>
+			</button>
+			<!-- play and pause btn -->
+			<button id="play" class="action-btn action-btn-big">
+				<i class="fas fa-play"></i>
+			</button>
+			<!-- Next btn -->
+			<button id="next" class="action-btn">
+				<i class="fas fa-forward"></i>
+			</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
