@@ -1,2 +1,2 @@
 # Java-Script
- Havinf fun with Js
+ Having fun with Js
